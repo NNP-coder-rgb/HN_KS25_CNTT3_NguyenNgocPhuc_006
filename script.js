@@ -223,15 +223,6 @@ let updateBook = (listBook) => {
       break;
     } while (!isValid);
 
-    let index = listBook.findIndex((book) => {
-      return book.name.toLowerCase() === searchBookName.toLowerCase();
-    });
-    if (index) {
-      listBook[index].prices = newPrices;
-      listBook[index].author = newAuthor;
-      listBook[index].category = newCategory;
-    }
-
     alert("Đã cập nhật sách thành công");
   }
 };
